@@ -24,6 +24,7 @@
   "homepage": "https://github.com/marb61a/fullstack_node_react#readme",
   "dependencies": {
     "express": "^4.16.1",
+    "mongoose": "^4.12.4",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "save": "^2.3.1"
