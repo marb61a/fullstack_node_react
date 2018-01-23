@@ -21,7 +21,14 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
     return(
         <div>
             <h5>Please confirm your entries</h5>
+            {reviewFields}
             
         </div>    
     );
 };
+
+function mapStateToProps(state) {
+  return { formValues: state.form.surveyForm.values };
+}
+
+export default connect(mapStateToProps, actions)(withRouter(SurveyFormReview));
